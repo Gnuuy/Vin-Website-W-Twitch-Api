@@ -1,11 +1,23 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import Logo from './NavBarLogo.png'
 
 export default function NavBar(){
     return (
         <nav>
-            <h1>Nav Bar</h1>
-            <Link href="/">Home</Link>
-            <Link href="/">About</Link>
+            <div className="nav-container-logo">
+            <Image
+                src={Logo}
+                width={50}
+                alt=""
+            />
+            <h1>Vin's Website</h1>
+            </div>
+            <div className="nav-container-links">
+                <Link className="nav-button-link" href="/">Home</Link>
+                <Link className="nav-button-link" href="/community">Community</Link>
+                <Link className="nav-button-link" href="/merchandise">Merchandise</Link>
+            </div>
         </nav>
     )
 }

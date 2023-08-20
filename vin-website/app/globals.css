@@ -1,4 +1,5 @@
 body {
+  background-color: blanchedalmond;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -6,4 +7,32 @@ body {
 
 footer {
   margin-top: auto;
+}
+
+nav {
+  background-color: rgb(122, 51, 51);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+}
+
+.nav-container-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: blue;
+}
+
+.nav-container-logo {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-button-link {
+  background-color: rgb(74, 177, 60);
 }
